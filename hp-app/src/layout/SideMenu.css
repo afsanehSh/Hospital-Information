@@ -1,0 +1,13 @@
+.mainMenu {
+    padding-right: 5px;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.mainMenu span {
+}
+
+.subMenu {
+    padding-right: 18px;
+    font-size: 13px;
+}
