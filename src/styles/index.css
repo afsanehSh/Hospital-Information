@@ -1,0 +1,162 @@
+/* Provide sufficient contrast against white background */
+@font-face {
+  font-family: "IRANSansFa";
+  src: url("../Fonts/IRANSansFaNum.eot"); /* IE9 Compat Modes */
+  src: url("../Fonts/IRANSansFaNum.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../Fonts/IRANSansFaNum.otf") format("opentype"), /* Open Type Font */
+  url("../Fonts/IRANSansFaNum.svg") format("svg"), /* Legacy iOS */
+  url("../Fonts/IRANSansFaNum.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../Fonts/IRANSansFaNum.woff") format("woff"), /* Modern Browsers */
+  url("../Fonts/IRANSansFaNum.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSANS";
+  src: url("../Fonts/IRANSansFaNum.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSANS1";
+  src: url("../Fonts/IRANSansFaNum.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSANS_Bold";
+  src: url("../Fonts/Iransans/IRANSans_Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSANS_Medium";
+  src: url("../Fonts/Iransans/IRANSans_Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "IRANSANS_Medium";
+}
+.MuiTreeView-root .MuiTreeItem-content .MuiTreeItem-label{
+  font-family: "IRANSANS_Medium";
+}
+
+.ui.form .field>label {
+  font-family: "IRANSANS_Medium";
+  font-weight: 500;
+}
+
+.ui.form input:not([type]), .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=email], .ui.form input[type=file], .ui.form input[type=number], .ui.form input[type=password], .ui.form input[type=search], .ui.form input[type=tel], .ui.form input[type=text], .ui.form input[type=time], .ui.form input[type=url]{
+  font-family: "IRANSANS";
+}
+
+.ui.dropdown>.text{
+  font-family: "IRANSANS";
+}
+
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+  body {
+      padding-top: 50px;
+      direction: rtl;
+      text-align: right;
+  }
+}
+
+:root {
+  --top-menu-height: 4em;
+  direction: rtl;
+}
+
+.top-menu {
+  height: var(--top-menu-height);
+  direction: rtl;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid: var(--top-menu-height) / 1fr;
+  grid-template-areas:  "menu"
+                        "maincontent";
+  min-height: 100vh;
+}
+
+.menu {
+  grid-area: menu;
+  z-index: 100;
+}
+
+.main-content {
+  grid-area: maincontent;
+  background-color: #f9fafb;
+}
+
+.parent {
+  display: inline-flex;
+  float: right;
+}
+
+.side {
+  transition: width 0.3s;
+  width: 14em !important;
+  overflow: hidden;
+  padding-top: var(--top-menu-height);
+  z-index: 99;
+}
+
+.small-side {
+  width: 4em !important;
+  flex-basis: 4em;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  transition: all 0.3s;
+  padding: 10px;
+  width: calc(100% - 14em);
+  margin-right: 200px;
+  height: 100%;
+}
+
+.small-content {
+  padding: 10px;
+  width: calc(90% - 4em);
+}
+
+.logo-space-menu-item {
+  width: 13em;
+}
+
+.display-inline {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-space {
+  font-size: 19px;
+  margin: 0 auto;
+}
+
+.logo-space img, .display-inline img {
+  margin-right: 8px;
+}
+
+.no-border::before {
+  display: none;
+}
+.top-menu i.icon {
+  margin: 0 !important;
+}
+
+
+.drop-left-padding{
+  padding-left: 0 !important;
+}
+
+.label-on-corner {
+  top: 0.8em !important;
+  left: 78% !important;
+}
